@@ -15,7 +15,7 @@ const fadeUp: MotionProps = {
 };
 
 export const Route = createFileRoute("/events/$eventId")({
-  loader: ({ params }) => {
+  loader: ({ params }: { params: { eventId: string } }) => {
     const event = eventDb[params.eventId];
     if (!event) throw notFound();
     return event;
@@ -68,7 +68,7 @@ function EventDetailComponent() {
           {/* Hashtags */}
           {event.tags?.length > 0 && (
             <motion.div {...fadeUp} className="mt-4 flex flex-wrap gap-2">
-              {event.tags.map((tag) => (
+              {event.tags.map((tag: string) => (
                 <motion.span
                   key={tag}
                   className="bg-muted text-muted-foreground text-xs font-semibold px-2.5 py-0.5 rounded-full"
@@ -90,7 +90,7 @@ function EventDetailComponent() {
               {...fadeUp}
               className="flex flex-row flex-wrap gap-x-8 gap-y-4 justify-center"
             >
-              {event.stats.map((stat, index) => (
+              {event.stats.map((stat: { value: number; prefix?: string; suffix?: string }, index: number) => (
                 <motion.div key={index} {...fadeUp}>
                   <AnimatedStat stat={stat} />
                 </motion.div>
@@ -136,7 +136,7 @@ function EventDetailComponent() {
                     {...fadeUp}
                     className="flex flex-col items-center gap-4 max-w-2xl mx-auto"
                   >
-                    {sponsors.map((s, i) => (
+                    {sponsors.map((s: string, i: number) => (
                       <motion.img
                         key={i}
                         src={s}
@@ -179,7 +179,7 @@ function EventDetailComponent() {
                     {...fadeUp}
                     className="grid grid-cols-2 gap-4 max-w-4xl mx-auto"
                   >
-                    {sponsors.slice(0, 4).map((s, i) => (
+                    {sponsors.slice(0, 4).map((s: string, i: number) => (
                       <motion.img
                         key={i}
                         src={s}
@@ -230,7 +230,7 @@ function EventDetailComponent() {
                     {...fadeUp}
                     className="flex flex-col items-center gap-4 max-w-2xl mx-auto"
                   >
-                    {photos.map((p, i) => (
+                    {photos.map((p: string, i: number) => (
                       <motion.img
                         key={i}
                         src={p}
@@ -273,7 +273,7 @@ function EventDetailComponent() {
                     {...fadeUp}
                     className="grid grid-cols-1 sm:grid-cols-2 gap-4"
                   >
-                    {photos.slice(0, 4).map((p, i) => (
+                    {photos.slice(0, 4).map((p: string, i: number) => (
                       <motion.img
                         key={i}
                         src={p}
