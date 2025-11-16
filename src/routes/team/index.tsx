@@ -8,7 +8,7 @@ export const Route = createFileRoute("/team/")({
 
 function RouteComponent() {
   return (
-    <section className="flex flex-col justify-center items-center gap-5 py-15">
+    <section className="flex flex-col justify-center items-center gap-5 pt-20 py-15">
       <section className="w-full h-fit flex flex-col items-center justify-center">
         <section className="flex flex-col justify-center items-center gap-7">
           <p className="text-3xl font-sans font-bold">Our Guides & Mentors</p>
