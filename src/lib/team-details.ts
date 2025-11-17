@@ -35,7 +35,7 @@ export const CoreTeam: Person[] = [
   {
     name: "Aadithyaa Eeswaran",
     title: "Chairperson",
-    photo: "/team/aadhitya.jpeg",
+    photo: "/team/aadhityaa-eeswaran.jpeg",
     social: "https://github.com/aadit-n3rdy",
     date: "2024 - Present",
   },
@@ -43,7 +43,7 @@ export const CoreTeam: Person[] = [
   {
     name: "M Leela Mahalakshmi",
     title: "Vice Chairperson",
-    photo: "/team/leela.jpeg",
+    photo: "/team/leela-mahalakshmi.jpeg",
     social: "https://www.linkedin.com/in/leela-m-336334301",
     date: "2025 - Present",
   },
@@ -59,7 +59,7 @@ export const CoreTeam: Person[] = [
   {
     name: "Sanyam Bhardwaj",
     title: "Treasurer",
-    photo: "/team/sanyam.jpeg",
+    photo: "/team/sanyam-bhardwaj.jpeg",
     social: "https://in.linkedin.com/in/sanyam-bhardwaj-04b2a4264",
     date: "2024 - Present",
   },
@@ -67,7 +67,7 @@ export const CoreTeam: Person[] = [
   {
     name: "Adithya Menon R",
     title: "Webmaster",
-    photo: "/team/adithya-menon.jpg",
+    photo: "/team/adithya-menon-r.jpg",
     social: "https://github.com/adithya-menon-r",
     date: "2025 - Present",
   },
@@ -83,7 +83,7 @@ export const CoreTeam: Person[] = [
   {
     name: "Midhunan V Prabhaharan",
     title: "Event Management Head",
-    photo: "/team/midhunan.jpg",
+    photo: "/team/midhunan-v-prabhaharan.jpg",
     social: "https://github.com/midhunann",
     date: "2025 - Present",
   },
@@ -91,7 +91,7 @@ export const CoreTeam: Person[] = [
   {
     name: "Vasudev Kishor",
     title: "Media Head",
-    photo: "/team/vasudev.jpg",
+    photo: "/team/vasudev-kishore.jpg",
     social: "https://in.linkedin.com/in/vasudevkishor",
     date: "2025 - Present",
   },
