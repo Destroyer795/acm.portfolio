@@ -6,13 +6,18 @@ interface ScramblingDigitProps {
   targetDigit: string;
   scrambleDuration: number;
   inView: boolean;
+  plain?: boolean;
+  digitClass?: string;
 }
 
-function ScramblingDigit({
-  targetDigit,
-  scrambleDuration,
-  inView,
-}: ScramblingDigitProps) {
+function ScramblingDigit(props: ScramblingDigitProps) {
+  const {
+    targetDigit,
+    scrambleDuration,
+    inView,
+    plain = false,
+    digitClass = "",
+  } = props;
   const [currentDigit, setCurrentDigit] = useState("0");
 
   useEffect(() => {
@@ -37,9 +42,18 @@ function ScramblingDigit({
     };
   }, [targetDigit, scrambleDuration, inView]);
 
-  return (
+  return plain ? (
     <span
-      className="
+      className={`font-semibold mx-0.5 text-foreground ${digitClass}`}
+      style= {{
+        fontFamily: "'JetBrains Mono', monospace"
+      }}
+    >
+      {currentDigit}
+    </span>
+  ) : (
+    <span
+      className={`
         inline-block
         bg-muted/70 
         border
@@ -48,10 +62,14 @@ function ScramblingDigit({
         rounded-md
         px-1 py-1
         mx-0.5
-        font-mono text-xl md:text-2xl
+        text-xl md:text-2xl
         min-w-[28px]
         text-center
-      "
+        ${digitClass}
+      `}
+      style= {{
+        fontFamily: "'JetBrains Mono', monospace"
+      }}
     >
       {currentDigit}
     </span>
@@ -61,9 +79,17 @@ function ScramblingDigit({
 // AnimatedStat Component
 interface AnimatedStatProps {
   stat: StatItem;
+  plainDigits?: boolean;
+  digitClass?: string;
+  tightSuffix?: boolean;
 }
 
-export function AnimatedStat({ stat }: AnimatedStatProps) {
+export function AnimatedStat({
+  stat,
+  plainDigits = false,
+  digitClass = "",
+  tightSuffix = false,
+}: AnimatedStatProps) {
   const digits = String(stat.value).split("");
   const baseDuration = 800;
   const stagger = 250;
@@ -93,7 +119,7 @@ export function AnimatedStat({ stat }: AnimatedStatProps) {
 
   return (
     <div
-      className="flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2 p-2"
+      className="flex flex-row flex-wrap items-center justify-center gap-x-1 gap-y-2 p-2"
       ref={statRef}
     >
       {/* Prefix*/}
@@ -111,13 +137,17 @@ export function AnimatedStat({ stat }: AnimatedStatProps) {
             targetDigit={digit}
             scrambleDuration={baseDuration + index * stagger}
             inView={isInView}
+            plain={plainDigits}
+            digitClass={digitClass}
           />
         ))}
       </div>
 
       {/* Suffix*/}
       {stat.suffix && (
-        <span className="text-xl md:text-2xl font-semibold text-foreground">
+        <span
+          className={`text-xl md:text-2xl font-semibold text-foreground${tightSuffix ? " ml-0" : " ml-1"}`}
+        >
           {stat.suffix}
         </span>
       )}

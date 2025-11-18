@@ -1,9 +1,20 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react"; // 1. Imported useEffect
 import { Home, Menu, X, Users, Calendar } from "lucide-react";
 
-export default function Header() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const baseLinkClasses =
     "transition-all duration-200 ease-in-out hover:scale-103";
@@ -18,14 +29,30 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 p-4 flex items-center justify-between bg-white text-black shadow-md">
-        <div className="flex items-center gap-4">
-          <Link to="/" className="flex items-center gap-3">
-            <img src="/acm_logo.png" alt="ACM Logo" className="h-10" />
-            <img src="/amrita_logo.svg" alt="Amrita Logo" className="h-8" />
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 p-3 md:py-2 md:px-6 flex items-center justify-between text-black w-full transition-all duration-300
+        ${
+          isScrolled || isOpen
+            ? "bg-white border-b border-zinc-200"
+            : "bg-transparent border-b border-transparent"
+        }
+        `}
+      >
+        <div className="flex items-center gap-4 h-12 md:h-14">
+          <Link to="/" className="flex items-center gap-3 h-full">
+            <img
+              src="/acm_logo.png"
+              alt="ACM Logo"
+              className="h-10 md:h-12 my-auto"
+            />
+            <img
+              src="/amrita_logo.svg"
+              alt="Amrita Logo"
+              className="h-8 md:h-10 my-auto"
+            />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-6 text-md font-medium text-black">
+        <nav className="hidden md:flex items-center gap-5 text-lg font-medium text-black">
           <Link
             to="/"
             activeProps={activeLinkProps}
@@ -59,7 +86,7 @@ export default function Header() {
       </header>
 
       <div
-        className={`md:hidden fixed top-[71px] left-0 w-full bg-white text-black transition-all duration-300 ease-in-out z-50 rounded-b-md ${
+        className={`md:hidden fixed top-[71px] left-0 w-full bg-white text-black transition-all duration-300 ease-in-out z-50 rounded-b-2xl shadow-[0_8px_16px_-4px_rgba(0,0,0,0.18)] ${
           isOpen ? "max-h-96" : "max-h-0"
         } overflow-hidden`}
       >
