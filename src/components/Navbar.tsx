@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useState, useEffect } from "react"; // 1. Imported useEffect
+import { useState, useEffect } from "react";
 import { Home, Menu, X, Users, Calendar } from "lucide-react";
 
 export default function Navbar() {
@@ -15,6 +15,31 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Close mobile drawer when the user scrolls, wheels, touches, resizes, or presses Escape
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const close = () => setIsOpen(false);
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+    };
+
+    window.addEventListener("scroll", close, { passive: true });
+    window.addEventListener("wheel", close, { passive: true });
+    window.addEventListener("touchstart", close, { passive: true });
+    window.addEventListener("resize", close);
+    window.addEventListener("keydown", onKey);
+
+    return () => {
+      window.removeEventListener("scroll", close);
+      window.removeEventListener("wheel", close);
+      window.removeEventListener("touchstart", close);
+      window.removeEventListener("resize", close);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [isOpen]);
 
   const baseLinkClasses =
     "transition-all duration-200 ease-in-out hover:scale-103";
