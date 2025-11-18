@@ -32,20 +32,16 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 p-3 md:py-2 md:px-6 flex items-center justify-between text-black w-full transition-all duration-300
         ${
-          isScrolled
+          (isScrolled || isOpen)
             ? "bg-white border-b border-zinc-200"
             : "bg-transparent border-b border-transparent"
         }
         `}
       >
-        <div className="flex items-center gap-4 h-12">
+        <div className="flex items-center gap-4 h-12 md:h-14">
           <Link to="/" className="flex items-center gap-3 h-full">
-            <img src="/acm_logo.png" alt="ACM Logo" className="h-10 my-auto" />
-            <img
-              src="/amrita_logo.svg"
-              alt="Amrita Logo"
-              className="h-8 my-auto"
-            />
+            <img src="/acm_logo.png" alt="ACM Logo" className="h-10 md:h-12 my-auto" />
+            <img src="/amrita_logo.svg" alt="Amrita Logo" className="h-8 md:h-10 my-auto" />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-5 text-lg font-medium text-black">
