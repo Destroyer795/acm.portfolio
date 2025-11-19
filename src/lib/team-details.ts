@@ -43,7 +43,7 @@ export const CoreTeam: Person[] = [
   {
     name: "M Leela Mahalakshmi",
     title: "Vice Chairperson",
-    photo: "/team/leela-mahalakshmi.jpeg",
+    photo: "/team/leela-mahalakshmi.jpg",
     social: "https://www.linkedin.com/in/leela-m-336334301",
     date: "2025 - Present",
   },
@@ -110,5 +110,178 @@ export const CoreTeam: Person[] = [
     photo: "/team/dharshni-p.jpg",
     social: "https://linkedin.com/in/p-dharshni",
     date: "2025 - Present",
+  },
+];
+
+export const ACMMembers: Person[] = [
+  {
+    name: "Joshua Karthik A",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since March 2025",
+  },
+  {
+    name: "Yash Bardia",
+    title: null,
+    photo: null,
+    social: "https://github.com/yendelevium",
+    date: "Since March 2025",
+  },
+  {
+    name: "Narain BK",
+    title: null,
+    photo: null,
+    social: "https://github.com/NarainBK",
+    date: "Since March 2025",
+  },
+  {
+    name: "Rutav Desai",
+    title: null,
+    photo: null,
+    social: "https://www.linkedin.com/in/rutav-desai/",
+    date: "Since October 2025",
+  },
+
+  {
+    name: "Harish G M",
+    title: null,
+    photo: null,
+    social: "https://github.com/GMHarish285",
+    date: "Since March 2025",
+  },
+  {
+    name: "Karthik Ganesan",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since March 2025",
+  },
+  {
+    name: "PG Karthikeyan",
+    title: null,
+    photo: null,
+    social: "https://github.com/cootot",
+    date: "Since June 2025",
+  },
+  {
+    name: "Vanshika Gupta",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since January 2025",
+  },
+  {
+    name: "Anushruthvic Murugasamy",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since March 2025",
+  },
+  {
+    name: "Sanjithganesa Pandiyan",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since March 2025",
+  },
+  {
+    name: "Chandana Polagangu",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since Oct 2025",
+  },
+  {
+    name: "Lade Ruchiran",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since October 2025",
+  },
+  {
+    name: "Sumithra S",
+    title: null,
+    photo: null,
+    social: "https://github.com/sumi-devs",
+    date: "Since March 2025",
+  },
+  {
+    name: "Adhikkesh S K",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since July 2024",
+  },
+  {
+    name: "Nitansh Shankar",
+    title: null,
+    photo: null,
+    social: "https://github.com/BIJJUDAMA/",
+    date: "Since July 2024",
+  },
+
+  {
+    name: "Kavinraj S",
+    title: null,
+    photo: null,
+    social: "https://github.com/kavinraj-95",
+    date: "Since July 2025",
+  },
+
+  {
+    name: "Keerthivasan S V",
+    title: null,
+    photo: null,
+    social: "https://github.com/Keerthivasan-Venkitajalam",
+    date: "Since March 2025",
+  },
+
+  {
+    name: "Pranav Kishan T Y",
+    title: null,
+    photo: null,
+    social: "https://github.com/Destroyer795",
+    date: "Since March 2025",
+  },
+
+  {
+    name: "Vishnu Vardhan T",
+    title: null,
+    photo: null,
+    social: "https://github.com/vTg2208",
+    date: "Since March 2025",
+  },
+
+  {
+    name: "Preethi Kannan",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since March 2025",
+  },
+
+  {
+    name: "S Sanjeev Srinivas",
+    title: null,
+    photo: null,
+    social: "https://github.com/EliteGamer007",
+    date: "Since March 2025",
+  },
+
+  {
+    name: "Akshay KS",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since March 2025",
+  },
+
+  {
+    name: "Deepak SN",
+    title: null,
+    photo: null,
+    social: "",
+    date: "Since Oct 2025",
   },
 ];
