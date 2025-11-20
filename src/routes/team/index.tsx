@@ -1,6 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import TeamCard from "@/components/TeamCard";
-import { ACMMembers, CoreTeam, Faculty } from "@/lib/team-details";
+import {
+  ACM_Volunteers,
+  ACMMembers,
+  CoreTeam,
+  Faculty,
+} from "@/lib/team-details";
 
 export const Route = createFileRoute("/team/")({
   component: RouteComponent,
@@ -70,6 +75,31 @@ function RouteComponent() {
               <TeamCard
                 key={members.name}
                 person={members}
+                type="small"
+                category="student"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* For Spacing */}
+      <div className="h-5 w-full" />
+
+      <section className="flex flex-col items-center justify-center gap-7">
+        <p className="font-geist mb-4 text-3xl font-bold md:text-4xl">
+          ACM Volunteers
+        </p>
+
+        <div className="w-[90%] gap-4 flex flex-wrap justify-center">
+          {ACM_Volunteers.map((volunteers) => (
+            <div
+              key={volunteers.name}
+              className="flex flex-wrap justify-center"
+            >
+              <TeamCard
+                key={volunteers.name}
+                person={volunteers}
                 type="small"
                 category="student"
               />

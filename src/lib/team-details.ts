@@ -3,7 +3,7 @@ export type Person = {
   title: string | null;
   photo: string | null;
   social: string;
-  date: Date | string;
+  date: Date | string | null;
 };
 
 export const Faculty: Person[] = [
@@ -297,6 +297,60 @@ const ACMMembers_Unsorted: Person[] = [
     photo: "/team/mem/dharshni-p.jpg",
     social: "https://linkedin.com/in/p-dharshni",
     date: new Date(2025, 5, 30),
+  },
+];
+
+export const ACM_Volunteers: Person[] = [
+  {
+    name: "Kiran Rajeev",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
+  },
+
+  {
+    name: "Vijay SB",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
+  },
+
+  {
+    name: "Tharun Kumarr A",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
+  },
+  {
+    name: "Thanus Kumaar",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
+  },
+  {
+    name: "Nandgopal R Nair",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
+  },
+  {
+    name: "Revanth Singothu",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
+  },
+  {
+    name: "Adarssh KG",
+    title: null,
+    photo: null,
+    social: "",
+    date: null,
   },
 ];
 

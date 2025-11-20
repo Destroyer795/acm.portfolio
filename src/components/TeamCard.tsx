@@ -75,9 +75,11 @@ export default function TeamCard(props: {
           <p className="font-geist font-bold text-lg text-black text-nowrap">
             {name}
           </p>
-          <p className="font-geist text-black/70 text-sm">
-            {formatSinceDate(date)}
-          </p>
+          {date && (
+            <p className="font-geist text-black/70 text-sm">
+              {formatSinceDate(date)}
+            </p>
+          )}
         </span>
       )}
 
