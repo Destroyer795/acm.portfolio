@@ -3,7 +3,7 @@ export type Person = {
   title: string | null;
   photo: string | null;
   social: string;
-  date: string | null;
+  date: Date | string;
 };
 
 export const Faculty: Person[] = [
@@ -103,44 +103,36 @@ export const CoreTeam: Person[] = [
     social: "https://www.linkedin.com/in/jayadev-d",
     date: "2025 - Present",
   },
-
-  {
-    name: "Dharshni P",
-    title: "Design and PR Co-Head",
-    photo: "/team/dharshni-p.jpg",
-    social: "https://linkedin.com/in/p-dharshni",
-    date: "2025 - Present",
-  },
 ];
 
-export const ACMMembers: Person[] = [
+const ACMMembers_Unsorted: Person[] = [
   {
     name: "Joshua Karthik A",
     title: null,
     photo: null,
     social: "",
-    date: "Since March 2025",
+    date: new Date(2025, 5, 30),
   },
   {
     name: "Yash Bardia",
     title: null,
-    photo: null,
+    photo: "team/mem/yash-bardia.jpg",
     social: "https://github.com/yendelevium",
-    date: "Since March 2025",
+    date: new Date(2025, 5, 30),
   },
   {
     name: "Narain BK",
     title: null,
-    photo: null,
+    photo: "team/mem/narain.png",
     social: "https://github.com/NarainBK",
-    date: "Since March 2025",
+    date: new Date(2025, 2, 24),
   },
   {
     name: "Rutav Desai",
     title: null,
-    photo: null,
+    photo: "team/mem/rutav-desai.jpg",
     social: "https://www.linkedin.com/in/rutav-desai/",
-    date: "Since October 2025",
+    date: new Date(2025, 9, 7),
   },
 
   {
@@ -148,109 +140,109 @@ export const ACMMembers: Person[] = [
     title: null,
     photo: null,
     social: "https://github.com/GMHarish285",
-    date: "Since March 2025",
+    date: new Date(2025, 2, 7),
   },
   {
     name: "Karthik Ganesan",
     title: null,
     photo: null,
     social: "",
-    date: "Since March 2025",
+    date: new Date(2025, 6, 3),
   },
   {
     name: "PG Karthikeyan",
     title: null,
-    photo: null,
+    photo: "team/mem/pg-karthikeyan.jpg",
     social: "https://github.com/cootot",
-    date: "Since June 2025",
+    date: new Date(2025, 5, 25),
   },
   {
     name: "Vanshika Gupta",
     title: null,
     photo: null,
     social: "",
-    date: "Since January 2025",
+    date: new Date(2025, 9, 7),
   },
   {
-    name: "Anushruthvic Murugasamy",
+    name: "Anush Rithvic M",
     title: null,
-    photo: null,
-    social: "",
-    date: "Since March 2025",
+    photo: "team/mem/anush-rithvic.jpg",
+    social: "https://github.com/anushrithvic",
+    date: new Date(2025, 2, 17),
   },
   {
     name: "Sanjithganesa Pandiyan",
     title: null,
     photo: null,
     social: "",
-    date: "Since March 2025",
+    date: new Date(2025, 2, 4),
   },
   {
     name: "Chandana Polagangu",
     title: null,
-    photo: null,
-    social: "",
-    date: "Since Oct 2025",
+    photo: "team/mem/chandana-polagangu.jpg",
+    social: "https://www.linkedin.com/in/chandana-polagangu-3b15b3249/",
+    date: new Date(2025, 9, 25),
   },
   {
     name: "Lade Ruchiran",
     title: null,
     photo: null,
     social: "",
-    date: "Since October 2025",
+    date: new Date(2025, 9, 7),
   },
   {
     name: "Sumithra S",
     title: null,
-    photo: null,
+    photo: "team/mem/sumithra-s.jpg",
     social: "https://github.com/sumi-devs",
-    date: "Since March 2025",
+    date: new Date(2025, 2, 20),
   },
   {
     name: "Adhikkesh S K",
     title: null,
-    photo: null,
-    social: "",
-    date: "Since July 2024",
+    photo: "team/mem/adhikkesh-s-k.jpg",
+    social: "https://github.com/Adhikkesh",
+    date: new Date(2025, 2, 13),
   },
   {
     name: "Nitansh Shankar",
     title: null,
-    photo: null,
+    photo: "team/mem/nitansh.jpg",
     social: "https://github.com/BIJJUDAMA/",
-    date: "Since July 2024",
+    date: new Date(2025, 2, 4),
   },
 
   {
     name: "Kavinraj S",
     title: null,
-    photo: null,
+    photo: "team/mem/kavinraj-s.jpg",
     social: "https://github.com/kavinraj-95",
-    date: "Since July 2025",
+    date: new Date(2025, 6, 14),
   },
 
   {
     name: "Keerthivasan S V",
     title: null,
-    photo: null,
+    photo: "team/mem/keerthivasan.jpg",
     social: "https://github.com/Keerthivasan-Venkitajalam",
-    date: "Since March 2025",
+    date: new Date(2025, 2, 16),
   },
 
   {
     name: "Pranav Kishan T Y",
     title: null,
-    photo: null,
+    photo: "team/mem/pranav-kishan.jpg",
     social: "https://github.com/Destroyer795",
-    date: "Since March 2025",
+    date: new Date(2025, 5, 25),
   },
 
   {
     name: "Vishnu Vardhan T",
     title: null,
-    photo: null,
+    photo: "team/mem/vishnu-vardhan.jpg",
     social: "https://github.com/vTg2208",
-    date: "Since March 2025",
+    date: new Date(2025, 6, 8),
   },
 
   {
@@ -258,23 +250,23 @@ export const ACMMembers: Person[] = [
     title: null,
     photo: null,
     social: "",
-    date: "Since March 2025",
+    date: new Date(2025, 2, 20),
   },
 
   {
     name: "S Sanjeev Srinivas",
     title: null,
-    photo: null,
+    photo: "team/mem/sanjeev-srinivas.jpeg",
     social: "https://github.com/EliteGamer007",
-    date: "Since March 2025",
+    date: new Date(2025, 5, 30),
   },
 
   {
     name: "Akshay KS",
     title: null,
-    photo: null,
-    social: "",
-    date: "Since March 2025",
+    photo: "team/mem/akshay-ks.jpg",
+    social: "https://github.com/akshayks13",
+    date: new Date(2024, 0, 3),
   },
 
   {
@@ -282,6 +274,32 @@ export const ACMMembers: Person[] = [
     title: null,
     photo: null,
     social: "",
-    date: "Since Oct 2025",
+    date: new Date(2025, 9, 17),
+  },
+
+  {
+    name: "Uhashini N",
+    title: null,
+    photo: "team/mem/uhashini-n.jpg",
+    social: "https://www.linkedin.com/in/uhashini-n-3b144a291/",
+    date: new Date(2025, 6, 20),
+  },
+  {
+    name: "Kanishka Senthilkumar ",
+    title: null,
+    photo: "team/mem/kanishka-Senthilkumar.jpg",
+    social: "https://www.linkedin.com/in/kanishka-senthilkumar-22b512291",
+    date: new Date(2025, 6, 20),
+  },
+  {
+    name: "Dharshni P",
+    title: null,
+    photo: "/team/mem/dharshni-p.jpg",
+    social: "https://linkedin.com/in/p-dharshni",
+    date: new Date(2025, 5, 30),
   },
 ];
+
+export const ACMMembers: Person[] = [...ACMMembers_Unsorted].sort(
+  (a, b) => (a.date as Date).getTime() - (b.date as Date).getTime(),
+);

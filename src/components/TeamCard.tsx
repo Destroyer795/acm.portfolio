@@ -24,6 +24,14 @@ export default function TeamCard(props: {
     "https://ubveu2ibt1.ufs.sh/f/X8HcF4epeALsCQMP2F1QcGDl9Ej1WrFd0nLmYAP7powk2Kt6",
   ];
 
+  function formatSinceDate(date: string | Date): string {
+    const d = typeof date === "string" ? new Date(date) : date;
+    return `Since ${d.toLocaleDateString("en-US", {
+      month: "short",
+      year: "numeric",
+    })}`;
+  }
+
   return (
     <a
       href={social}
@@ -67,7 +75,9 @@ export default function TeamCard(props: {
           <p className="font-geist font-bold text-lg text-black text-nowrap">
             {name}
           </p>
-          <p className="font-geist text-black/70 text-sm">{date}</p>
+          <p className="font-geist text-black/70 text-sm">
+            {formatSinceDate(date)}
+          </p>
         </span>
       )}
 
@@ -76,7 +86,7 @@ export default function TeamCard(props: {
           className={`absolute top-2 left-2 z-10 flex items-center gap-2 ${category === "faculty" ? "bg-[#b50246]" : "bg-[#212529]"} rounded-4xl px-2 py-1 text-white`}
         >
           <Calendar size={15} color="#ffffff" />
-          <p className="font-geist text-[0.7rem] font-bold">{date}</p>
+          <p className="font-geist text-[0.7rem] font-bold">{date as string}</p>
         </div>
       )}
 
