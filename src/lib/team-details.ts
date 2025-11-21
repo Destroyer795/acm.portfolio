@@ -14,7 +14,6 @@ export const Faculty: Person[] = [
     social: "https://www.amrita.edu/faculty/bindu-k-r/",
     date: "2020 - Present",
   },
-
   {
     name: "Dr. Aarthi R.",
     title: "Assistant Professor (Sl.Gd.)",
@@ -39,7 +38,6 @@ export const CoreTeam: Person[] = [
     social: "https://github.com/aadit-n3rdy",
     date: "2024 - Present",
   },
-
   {
     name: "M Leela Mahalakshmi",
     title: "Vice Chairperson",
@@ -47,7 +45,6 @@ export const CoreTeam: Person[] = [
     social: "https://www.linkedin.com/in/leela-m-336334301",
     date: "2025 - Present",
   },
-
   {
     name: "Sarath Chandra",
     title: "Secretary",
@@ -55,7 +52,6 @@ export const CoreTeam: Person[] = [
     social: "https://www.linkedin.com/in/sarathcx",
     date: "2024 - Present",
   },
-
   {
     name: "Sanyam Bhardwaj",
     title: "Treasurer",
@@ -63,7 +59,6 @@ export const CoreTeam: Person[] = [
     social: "https://in.linkedin.com/in/sanyam-bhardwaj-04b2a4264",
     date: "2024 - Present",
   },
-
   {
     name: "Adithya Menon R",
     title: "Webmaster",
@@ -71,7 +66,6 @@ export const CoreTeam: Person[] = [
     social: "https://github.com/adithya-menon-r",
     date: "2025 - Present",
   },
-
   {
     name: "I Karthik Saiharsh",
     title: "Design and PR Head",
@@ -79,7 +73,6 @@ export const CoreTeam: Person[] = [
     social: "https://github.com/karthik-saiharsh",
     date: "2025 - Present",
   },
-
   {
     name: "Midhunan V Prabhaharan",
     title: "Event Management Head",
@@ -87,7 +80,6 @@ export const CoreTeam: Person[] = [
     social: "https://github.com/midhunann",
     date: "2025 - Present",
   },
-
   {
     name: "Vasudev Kishor",
     title: "Media Head",
@@ -95,7 +87,6 @@ export const CoreTeam: Person[] = [
     social: "https://in.linkedin.com/in/vasudevkishor",
     date: "2025 - Present",
   },
-
   {
     name: "Jayadev D",
     title: "Webmaster Co-Head",
@@ -134,7 +125,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://www.linkedin.com/in/rutav-desai/",
     date: new Date(2025, 9, 7),
   },
-
   {
     name: "Harish G M",
     title: null,
@@ -212,7 +202,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/BIJJUDAMA/",
     date: new Date(2025, 2, 4),
   },
-
   {
     name: "Kavinraj S",
     title: null,
@@ -220,7 +209,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/kavinraj-95",
     date: new Date(2025, 6, 14),
   },
-
   {
     name: "Keerthivasan S V",
     title: null,
@@ -228,7 +216,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/Keerthivasan-Venkitajalam",
     date: new Date(2025, 2, 16),
   },
-
   {
     name: "Pranav Kishan T Y",
     title: null,
@@ -236,7 +223,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/Destroyer795",
     date: new Date(2025, 5, 25),
   },
-
   {
     name: "Vishnu Vardhan T",
     title: null,
@@ -244,7 +230,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/vTg2208",
     date: new Date(2025, 6, 8),
   },
-
   {
     name: "Preethi Kannan",
     title: null,
@@ -252,7 +237,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "",
     date: new Date(2025, 2, 20),
   },
-
   {
     name: "S Sanjeev Srinivas",
     title: null,
@@ -260,7 +244,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/EliteGamer007",
     date: new Date(2025, 5, 30),
   },
-
   {
     name: "Akshay KS",
     title: null,
@@ -268,7 +251,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "https://github.com/akshayks13",
     date: new Date(2025, 2, 11),
   },
-
   {
     name: "Deepak SN",
     title: null,
@@ -276,7 +258,6 @@ const ACMMembers_Unsorted: Person[] = [
     social: "",
     date: new Date(2025, 9, 17),
   },
-
   {
     name: "Uhashini N",
     title: null,
@@ -302,54 +283,52 @@ const ACMMembers_Unsorted: Person[] = [
 
 export const ACM_Volunteers: Person[] = [
   {
-    name: "Kiran Rajeev",
-    title: null,
-    photo: null,
-    social: "",
-    date: null,
-  },
-
-  {
-    name: "Vijay SB",
-    title: null,
-    photo: null,
-    social: "",
-    date: null,
-  },
-
-  {
     name: "Tharun Kumarr A",
     title: null,
-    photo: null,
-    social: "",
+    photo: "/team/volunteers/tharun-kumarr-a.jpg",
+    social: "https://github.com/TharunKumarrA",
     date: null,
   },
   {
     name: "Thanus Kumaar",
     title: null,
+    photo: "/team/volunteers/thanus-kumaar.jpg",
+    social: "https://github.com/Thanus-Kumaar",
+    date: null,
+  },
+  {
+    name: "Kiran Rajeev",
+    title: null,
     photo: null,
-    social: "",
+    social: "https://github.com/KiranRajeev-KV/",
+    date: null,
+  },
+  {
+    name: "Vijay SB",
+    title: null,
+    photo: "/team/volunteers/vijay-sb.jpg",
+    social: "https://github.com/vijay-sb",
     date: null,
   },
   {
     name: "Nandgopal R Nair",
     title: null,
-    photo: null,
-    social: "",
+    photo: "/team/volunteers/nandgopal-r-nair.jpg",
+    social: "https://github.com/Nandgopal-R",
     date: null,
   },
   {
     name: "Revanth Singothu",
     title: null,
     photo: null,
-    social: "",
+    social: "https://github.com/rev-sin",
     date: null,
   },
   {
     name: "Adarssh KG",
     title: null,
     photo: null,
-    social: "",
+    social: "https://github.com/adar-ssh",
     date: null,
   },
 ];

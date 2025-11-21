@@ -102,7 +102,7 @@ function JoinUsComponent() {
             <BenefitItem
               icon={GraduationCap}
               title="Summer & Winter Schools"
-              description="Get exclusive discounts on ACM India Summer & Winter Schools. Attend 2-week immersive learning programs at top institutes like IITs and IIITs."
+              description="Get exclusive discounts on ACM India Summer & Winter Schools. Attend 2-week immersive learning programs at top institutes in India."
             />
 
             <BenefitItem
@@ -114,13 +114,13 @@ function JoinUsComponent() {
             <BenefitItem
               icon={Users}
               title="Community"
-              description="Network with like-minded individuals, seniors, and industry experts. Build connections that last a lifetime."
+              description="Network with like minded individuals, seniors, and industry experts. Build connections that last a lifetime."
             />
 
             <BenefitItem
               icon={Cpu}
               title="Projects & Skill Building"
-              description="Work on cutting-edge open-source projects while gaining valuable technical and management experience."
+              description="Work on cutting edge open-source projects while gaining valuable technical and management experience."
             />
 
             <BenefitItem
@@ -167,7 +167,7 @@ function JoinUsComponent() {
                   <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-zinc-400" />
                   <span>
                     Select <strong>"Student Membership"</strong> and complete
-                    the payment.
+                    the membership payment.
                   </span>
                 </li>
               </ul>
@@ -179,7 +179,7 @@ function JoinUsComponent() {
 
             <TimelineStep number="2" title="Join the Amrita Student Chapter">
               <p>
-                Use your new Membership ID to register officially with our
+                Use your new Membership ID to officially register with our
                 college chapter.
               </p>
               <div className="mt-2 flex items-start gap-2">

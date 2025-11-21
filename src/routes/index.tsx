@@ -299,10 +299,10 @@ function App() {
                 <div className="font-geist text-lg font-semibold text-white drop-shadow-lg">
                   Come for the code, stay for the community.
                 </div>
-                <a href="#join" className="ml-2">
+                <a href="/join-us" className="ml-2">
                   <button
                     type="button"
-                    className="font-geist cursor-pointer rounded-full bg-white px-4 py-2 text-sm font-semibold text-black shadow-md transition-colors hover:bg-zinc-200 hover:text-black"
+                    className="font-geist transform cursor-pointer rounded-full bg-white px-4 py-2 text-sm font-semibold text-black shadow-md transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-zinc-200 hover:text-black"
                   >
                     Join the Community
                   </button>
