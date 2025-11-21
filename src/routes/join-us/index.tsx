@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Users,
+  ArrowRight,
+  BookOpen,
   Calendar,
   Cpu,
-  Library,
-  BookOpen,
-  ArrowRight,
   ExternalLink,
   GraduationCap,
+  Library,
+  Users,
 } from "lucide-react";
 
-export const Route = createFileRoute("/join-us")({
+export const Route = createFileRoute("/join-us/")({
   component: JoinUsComponent,
 });
 
@@ -63,7 +63,7 @@ function TimelineStep({
         )}
       </div>
 
-      <div className={`flex-1 ${!isLast ? "pb-16" : "pb-0"}`}>
+      <div className={`flex-1 ${!isLast ? `pb-16` : `pb-0`}`}>
         <div className="pt-1">
           <h3 className="mb-4 text-2xl font-bold text-zinc-900 dark:text-white">
             {title}
@@ -80,18 +80,15 @@ function TimelineStep({
 function JoinUsComponent() {
   return (
     <div className="min-h-screen bg-white font-sans text-zinc-900 selection:bg-zinc-200 dark:bg-zinc-900 dark:text-white dark:selection:bg-zinc-700">
-      <main className="container mx-auto max-w-6xl p-4 md:p-8">
-        <section
-          id="benefits"
-          className="border-b border-zinc-100 pt-10 pb-10 dark:border-zinc-800"
-        >
+      <main className="container mx-auto max-w-6xl p-4">
+        <section className="border-b border-zinc-100 pt-5 pb-8 dark:border-zinc-800">
           <div className="mb-12 text-center">
             <h2 className="mb-2 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl dark:text-white">
               Why Join Us?
             </h2>
             <p className="mx-auto max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-              Unlock a world of opportunities, from technical skill-building to
-              networking.
+              Unlock a world of opportunities, from technical skill building to
+              networking
             </p>
           </div>
 
@@ -134,18 +131,18 @@ function JoinUsComponent() {
           </div>
         </section>
 
-        <section id="apply" className="pt-10 pb-20 md:pb-32">
+        <section className="pt-10 pb-10 md:pb-14">
           <div className="mx-auto max-w-3xl">
             <div className="mb-12 text-center">
               <h2 className="mb-2 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl dark:text-white">
                 How to Apply
               </h2>
               <p className="mx-auto max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-                Follow this simple roadmap to become a member.
+                Follow this simple roadmap to become a member
               </p>
             </div>
 
-            <TimelineStep number="1" title="Get Your ACM Membership">
+            <TimelineStep number="1" title="Get Your ACM India Membership">
               <p>
                 To become a member of the local chapter, you first need an{" "}
                 <strong>ACM India Student Membership</strong>.
@@ -176,13 +173,13 @@ function JoinUsComponent() {
               </ul>
               <div className="mt-2 inline-block rounded-lg border border-blue-100 bg-blue-50 p-3 text-sm text-blue-700 dark:border-blue-800/50 dark:bg-blue-900/20 dark:text-blue-300">
                 <strong>Note:</strong> You will receive a 7-digit Membership
-                Number. Save it!
+                ID. Save it!
               </div>
             </TimelineStep>
 
-            <TimelineStep number="2" title="Join Amrita Chapter">
+            <TimelineStep number="2" title="Join the Amrita Student Chapter">
               <p>
-                Use your new Membership Number to register officially with our
+                Use your new Membership ID to register officially with our
                 college chapter.
               </p>
               <div className="mt-2 flex items-start gap-2">
@@ -198,12 +195,9 @@ function JoinUsComponent() {
                     Local Chapter Registration Form{" "}
                     <ExternalLink className="h-3 w-3" />
                   </a>{" "}
-                  to link your membership ID with ACM Amrita Chapter.
+                  to link your membership ID with ACM Amrita Student Chapter.
                 </p>
               </div>
-              <p className="mt-2 text-sm text-zinc-500">
-                This gives you access to member perks and core team recruitment.
-              </p>
             </TimelineStep>
 
             {/* Step 3 */}
@@ -213,8 +207,7 @@ function JoinUsComponent() {
                 membership details.
               </p>
               <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                You will receive a confirmation upon successful verification,if
-                not feel free to contact us.
+                We will contact you upon successful verification. If you don't hear from us in a few days, feel free to inform us.
               </p>
             </TimelineStep>
           </div>
