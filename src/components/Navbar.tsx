@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Calendar, Home, Menu, Users, UserPlus, X } from "lucide-react";
+import { Calendar, Home, Menu, UserPlus, Users, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {

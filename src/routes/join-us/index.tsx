@@ -172,8 +172,8 @@ function JoinUsComponent() {
                 </li>
               </ul>
               <div className="mt-2 inline-block rounded-lg border border-blue-100 bg-blue-50 p-3 text-sm text-blue-700 dark:border-blue-800/50 dark:bg-blue-900/20 dark:text-blue-300">
-                <strong>Note:</strong> You will receive a 7-digit Membership
-                ID. Save it!
+                <strong>Note:</strong> You will receive a 7-digit Membership ID.
+                Save it!
               </div>
             </TimelineStep>
 
@@ -207,7 +207,8 @@ function JoinUsComponent() {
                 membership details.
               </p>
               <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                We will contact you upon successful verification. If you don't hear from us in a few days, feel free to inform us.
+                We will contact you upon successful verification. If you don't
+                hear from us in a few days, feel free to inform us.
               </p>
             </TimelineStep>
           </div>
