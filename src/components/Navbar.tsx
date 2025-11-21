@@ -159,7 +159,7 @@ export default function Navbar() {
             <span className="font-medium">Team</span>
           </Link>
           <Link
-            to="/join"
+            to="/join-us"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 rounded-lg py-3 text-black transition-colors hover:bg-gray-100"
             activeProps={{

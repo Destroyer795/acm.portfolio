@@ -8,114 +8,120 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as JoinUsRouteImport } from './routes/join-us'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as TeamIndexRouteImport } from './routes/team/index'
-import { Route as EventsIndexRouteImport } from './routes/events/index'
-import { Route as EventsEventIdRouteImport } from './routes/events/$eventId'
+import { Route as rootRouteImport } from "./routes/__root";
+import { Route as JoinUsRouteImport } from "./routes/join-us";
+import { Route as IndexRouteImport } from "./routes/index";
+import { Route as TeamIndexRouteImport } from "./routes/team/index";
+import { Route as EventsIndexRouteImport } from "./routes/events/index";
+import { Route as EventsEventIdRouteImport } from "./routes/events/$eventId";
 
 const JoinUsRoute = JoinUsRouteImport.update({
-  id: '/join-us',
-  path: '/join-us',
+  id: "/join-us",
+  path: "/join-us",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const TeamIndexRoute = TeamIndexRouteImport.update({
-  id: '/team/',
-  path: '/team/',
+  id: "/team/",
+  path: "/team/",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const EventsIndexRoute = EventsIndexRouteImport.update({
-  id: '/events/',
-  path: '/events/',
+  id: "/events/",
+  path: "/events/",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const EventsEventIdRoute = EventsEventIdRouteImport.update({
-  id: '/events/$eventId',
-  path: '/events/$eventId',
+  id: "/events/$eventId",
+  path: "/events/$eventId",
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/join-us': typeof JoinUsRoute
-  '/events/$eventId': typeof EventsEventIdRoute
-  '/events': typeof EventsIndexRoute
-  '/team': typeof TeamIndexRoute
+  "/": typeof IndexRoute;
+  "/join-us": typeof JoinUsRoute;
+  "/events/$eventId": typeof EventsEventIdRoute;
+  "/events": typeof EventsIndexRoute;
+  "/team": typeof TeamIndexRoute;
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/join-us': typeof JoinUsRoute
-  '/events/$eventId': typeof EventsEventIdRoute
-  '/events': typeof EventsIndexRoute
-  '/team': typeof TeamIndexRoute
+  "/": typeof IndexRoute;
+  "/join-us": typeof JoinUsRoute;
+  "/events/$eventId": typeof EventsEventIdRoute;
+  "/events": typeof EventsIndexRoute;
+  "/team": typeof TeamIndexRoute;
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/join-us': typeof JoinUsRoute
-  '/events/$eventId': typeof EventsEventIdRoute
-  '/events/': typeof EventsIndexRoute
-  '/team/': typeof TeamIndexRoute
+  __root__: typeof rootRouteImport;
+  "/": typeof IndexRoute;
+  "/join-us": typeof JoinUsRoute;
+  "/events/$eventId": typeof EventsEventIdRoute;
+  "/events/": typeof EventsIndexRoute;
+  "/team/": typeof TeamIndexRoute;
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/join-us' | '/events/$eventId' | '/events' | '/team'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/join-us' | '/events/$eventId' | '/events' | '/team'
-  id: '__root__' | '/' | '/join-us' | '/events/$eventId' | '/events/' | '/team/'
-  fileRoutesById: FileRoutesById
+  fileRoutesByFullPath: FileRoutesByFullPath;
+  fullPaths: "/" | "/join-us" | "/events/$eventId" | "/events" | "/team";
+  fileRoutesByTo: FileRoutesByTo;
+  to: "/" | "/join-us" | "/events/$eventId" | "/events" | "/team";
+  id:
+    | "__root__"
+    | "/"
+    | "/join-us"
+    | "/events/$eventId"
+    | "/events/"
+    | "/team/";
+  fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  JoinUsRoute: typeof JoinUsRoute
-  EventsEventIdRoute: typeof EventsEventIdRoute
-  EventsIndexRoute: typeof EventsIndexRoute
-  TeamIndexRoute: typeof TeamIndexRoute
+  IndexRoute: typeof IndexRoute;
+  JoinUsRoute: typeof JoinUsRoute;
+  EventsEventIdRoute: typeof EventsEventIdRoute;
+  EventsIndexRoute: typeof EventsIndexRoute;
+  TeamIndexRoute: typeof TeamIndexRoute;
 }
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/join-us': {
-      id: '/join-us'
-      path: '/join-us'
-      fullPath: '/join-us'
-      preLoaderRoute: typeof JoinUsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/team/': {
-      id: '/team/'
-      path: '/team'
-      fullPath: '/team'
-      preLoaderRoute: typeof TeamIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/events/': {
-      id: '/events/'
-      path: '/events'
-      fullPath: '/events'
-      preLoaderRoute: typeof EventsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/events/$eventId': {
-      id: '/events/$eventId'
-      path: '/events/$eventId'
-      fullPath: '/events/$eventId'
-      preLoaderRoute: typeof EventsEventIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+    "/join-us": {
+      id: "/join-us";
+      path: "/join-us";
+      fullPath: "/join-us";
+      preLoaderRoute: typeof JoinUsRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/": {
+      id: "/";
+      path: "/";
+      fullPath: "/";
+      preLoaderRoute: typeof IndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/team/": {
+      id: "/team/";
+      path: "/team";
+      fullPath: "/team";
+      preLoaderRoute: typeof TeamIndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/events/": {
+      id: "/events/";
+      path: "/events";
+      fullPath: "/events";
+      preLoaderRoute: typeof EventsIndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
+    "/events/$eventId": {
+      id: "/events/$eventId";
+      path: "/events/$eventId";
+      fullPath: "/events/$eventId";
+      preLoaderRoute: typeof EventsEventIdRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
   }
 }
 
@@ -125,7 +131,7 @@ const rootRouteChildren: RootRouteChildren = {
   EventsEventIdRoute: EventsEventIdRoute,
   EventsIndexRoute: EventsIndexRoute,
   TeamIndexRoute: TeamIndexRoute,
-}
+};
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+  ._addFileTypes<FileRouteTypes>();
