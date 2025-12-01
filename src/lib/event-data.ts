@@ -252,24 +252,27 @@ export const eventDb: Record<string, Event> = {
     ],
   },
 
-  "blueprint-workshop": {
-    //events/blueprint-workshop is the route
-    name: "Blueprint System Design Workshop",
+  "blueprint-workshop-ep1": {
+    //events/blueprint-workshop-ep1 is the route
+    name: "Blueprint Workshop - EP1 (P2P)",
     category: "Workshop",
     sortDate: "2025/11/26",
     displayDate: "26 Nov 2025",
     details: "26th November 2025 | Anugraha Hall, Academic Block 3",
     report:
-      `System design can feel abstract until you start reverse engineering a real world problem, which is exactly why we spent time tearing down Rainstorm's P2P architecture. We explored its decentralised model to better understand how distributed systems maintain robustness without a central point of failure. By analysing the differences between peer-to-peer and traditional client-server setups, we got a clear look at the engineering decisions that go into building fault tolerant networks. The session wasn't just theory. We dug into the actual code structure, using Go to see how concepts like concurrency and file chunking are implemented in practice. We walked through the architectural diagrams and code to see how trackers, peers, and checksums interact live. It was a solid, hands-on way to bridge the gap between high level system design concepts and the clean code required to make them scalable.`,
-    mainImage: "/events/blueprint-workshop/blueprint-workshop-1.jpg",
+      `We designed the Blueprint workshop series on a simple premise: system design feels abstract until you start reverse engineering a real world problem. To set the tone for the series, Episode 01 focused on tearing down Rainstorm's P2P architecture.
+       We explored its decentralized model to better understand how distributed systems maintain robustness without a central point of failure. By analysing the differences between peer-to-peer and traditional client-server setups, we got a clear look at the engineering decisions that go into building fault tolerant networks. But we didn't stop at theory. We dug into the actual code structure, using Go to see how concepts like concurrency and file chunking are implemented in practice. From architectural diagrams to live interactions between trackers, peers, and checksums, this session established the Blueprint approach: bridging the gap between high level concepts and the clean code required to make them scalable.`,
+    mainImage: "/events/blueprint-workshop/blueprint-workshop-ep1-1.jpg",
     stats: [{ prefix: "Seeded Ideas to Over ", value: 50, suffix: " Active Peers in the Network" }],
     gallery: [
-      "/events/blueprint-workshop/blueprint-workshop-2.jpg",
-      "/events/blueprint-workshop/blueprint-workshop-3.jpg",
-      "/events/blueprint-workshop/blueprint-workshop-4.jpg",
+      "/events/blueprint-workshop/blueprint-workshop-ep1-2.jpg",
+      "/events/blueprint-workshop/blueprint-workshop-ep1-3.jpg",
+      "/events/blueprint-workshop/blueprint-workshop-ep1-4.jpg",
     ],
     tags: [
+      '#Blueprint',
       "#SystemDesign",
+      "#P2P",
       "#Torrenting",
       "#ACM",
       "#Amrita",

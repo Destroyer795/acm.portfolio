@@ -63,7 +63,7 @@ function EventDetailComponent() {
         {/* Event Report */}
         <motion.div {...fadeUp} className="mx-auto mb-10 max-w-4xl">
           <motion.p
-            className="text-base leading-relaxed whitespace-pre-line md:text-lg"
+            className="text-base leading-relaxed whitespace-pre-line md:text-lg text-justify"
             {...fadeUp}
           >
             {event.report}
