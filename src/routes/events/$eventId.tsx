@@ -95,14 +95,14 @@ function EventDetailComponent() {
               className="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4"
             >
               {event.stats.map(
-                (
-                  stat: { value: number; prefix?: string; suffix?: string },
-                  index: number,
-                ) => (
-                  <motion.div key={index} {...fadeUp}>
-                    <AnimatedStat stat={stat} />
-                  </motion.div>
-                ),
+                (stat: { value: number; prefix?: string; suffix?: string }) => {
+                  const statKey = `${stat.prefix ?? ''}${stat.value}${stat.suffix ?? ''}`;
+                  return (
+                    <motion.div key={statKey} {...fadeUp}>
+                      <AnimatedStat stat={stat} />
+                    </motion.div>
+                  );
+                },
               )}
             </motion.div>
           </motion.div>
@@ -126,9 +126,9 @@ function EventDetailComponent() {
               {...fadeUp}
               className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 md:gap-8"
             >
-              {event.sponsors.map((sponsor: string, index: number) => (
+              {event.sponsors.map((sponsor: string) => (
                 <motion.div
-                  key={index}
+                  key={sponsor}
                   {...fadeUp}
                   className="w-40 sm:w-48 md:w-56 lg:w-64"
                 >
@@ -137,7 +137,7 @@ function EventDetailComponent() {
                     loading="lazy"
                     decoding="async"
                     className="h-auto w-full rounded-lg object-contain p-4 transition-transform duration-300 hover:scale-105"
-                    alt={`Sponsor ${index + 1}`}
+                    alt={`Sponsor ${sponsor}`}
                     {...fadeUp}
                   />
                 </motion.div>
@@ -183,9 +183,9 @@ function EventDetailComponent() {
                     {...fadeUp}
                     className="mx-auto grid max-w-6xl grid-cols-1 gap-2 md:grid-cols-2"
                   >
-                    {photos.map((p: string, i: number) => (
+                    {photos.map((p: string) => (
                       <motion.img
-                        key={i}
+                        key={p}
                         src={p}
                         loading="lazy"
                         decoding="async"
@@ -207,7 +207,7 @@ function EventDetailComponent() {
                       (_p: string, i: number) =>
                         i % 2 === 0 && (
                           <div
-                            key={`row-${i}`}
+                            key={`row-${photos[i]}-${photos[i + 1]}`}
                             className="grid grid-cols-1 gap-2 md:grid-cols-2"
                           >
                             <motion.img
@@ -245,9 +245,9 @@ function EventDetailComponent() {
                   {...fadeUp}
                   className="mx-auto grid max-w-6xl grid-cols-1 gap-2 md:grid-cols-2"
                 >
-                  {photos.map((p: string, i: number) => (
+                  {photos.map((p: string) => (
                     <motion.img
-                      key={i}
+                      key={p}
                       src={p}
                       loading="lazy"
                       decoding="async"
