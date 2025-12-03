@@ -313,7 +313,7 @@ function App() {
           {/* Mobile: text and button below image */}
           <div className="mt-4 block px-2 md:hidden">
             <div className="flex justify-center">
-              <a href="#join">
+              <a href="/join-us">
                 <button
                   type="button"
                   className="font-geist rounded-full bg-black px-5 py-2 text-sm font-semibold text-white shadow-md transition-colors hover:bg-zinc-900"

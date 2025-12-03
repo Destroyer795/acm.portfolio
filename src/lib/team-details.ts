@@ -89,7 +89,7 @@ export const CoreTeam: Person[] = [
   },
   {
     name: "Jayadev D",
-    title: "Webmaster Co-Head",
+    title: "Assistant Webmaster",
     photo: "/team/core-team/jayadev-d.jpg",
     social: "https://www.linkedin.com/in/jayadev-d",
     date: "2025 - Present",
