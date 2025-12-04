@@ -83,7 +83,12 @@ export const eventDb: Record<string, Event> = {
     details: "25th February 2025 | Seminar Hall, Academic Block 3",
     report:
       "Webdev 101 marked the start of the CS101 series of events for 2024-25. The workshop provided a holistic introduction to web development with a good mix of hands-on and theory. Pariticpants learnt the ins and outs of modern frontend development frameworks like React by building a todo app and a login page, complete with backend integration. There was a live coding session where the attendees were made to code a website, and the speakers were coding live along with the attendees. Doubts were discussed and cleared. At the end of the workshop, a Q/A session was also held.",
-    mainImage: "/events/web-101-workshop.jpeg",
+    mainImage: "/events/web-101-workshop/web-101-1.JPG",
+    gallery: [
+      "/events/web-101-workshop/web-101-2.JPG",
+      "/events/web-101-workshop/web-101-3.JPG",
+      "/events/web-101-workshop/web-101-4.JPG",
+    ],
     stats: [{ prefix: "Over ", value: 100, suffix: " Students Joined" }],
     tags: ["#Webdev101", "#CS101", "#ACM", "#Amrita", "#Workshop"],
   },
